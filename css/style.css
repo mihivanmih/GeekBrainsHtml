@@ -10,7 +10,15 @@ body {
 
 .main {
   width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 33;
+  background: #fff; }
+
+video {
+  width: 100%;
+  position: fixed;
+  z-index: 22; }
 
 .header {
   background: #445162;
@@ -20,7 +28,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 33; }
   .header--title {
     font-size: 60px;
     font-weight: 300;
@@ -143,7 +153,15 @@ body {
     width: 75px;
     height: 75px;
     background: #445162;
-    border-radius: 50px; }
+    border-radius: 50px;
+    overflow: hidden; }
+    .reviews--img-left {
+      width: 110px;
+      margin-left: -40px; }
+    .reviews--img-right {
+      width: 110px;
+      margin-left: 0px;
+      transform: scale(-1, 1); }
   .reviews--text {
     width: calc(90% - 75px);
     font-size: 14px;
@@ -164,13 +182,13 @@ body {
     .reviews--text-autor {
       color: #989898; }
 
-.buyitnow {
+.buy-it-now {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: center; }
-  .buyitnow--heading {
+  .buy-it-now--heading {
     color: #445161;
     width: 100%;
     text-align: center;
@@ -178,7 +196,7 @@ body {
     line-height: 30px;
     font-weight: 300;
     padding-bottom: 35px; }
-  .buyitnow--block {
+  .buy-it-now--block {
     max-width: 300px;
     padding-bottom: 30px;
     background: #445162;
@@ -186,13 +204,13 @@ body {
     color: #fff;
     border-radius: 5px;
     margin-right: 45px; }
-    .buyitnow--block-heading {
+    .buy-it-now--block-heading {
       text-align: center;
       font-size: 24px;
       line-height: 19px;
       font-weight: 300;
       padding: 20px; }
-    .buyitnow--block-price {
+    .buy-it-now--block-price {
       text-align: center;
       font-size: 40px;
       line-height: 30px;
@@ -200,12 +218,12 @@ body {
       padding: 20px;
       background: #fff;
       color: #445162; }
-    .buyitnow--block-list {
+    .buy-it-now--block-list {
       font-size: 14px;
       line-height: 22px;
       padding: 20px 20px 20px 40px;
       list-style-type: decimal; }
-    .buyitnow--block-buy {
+    .buy-it-now--block-buy {
       padding: 15px;
       text-align: center;
       background: #fff;
@@ -217,7 +235,12 @@ body {
       cursor: pointer;
       font-size: 18px;
       line-height: 18px;
-      font-weight: bold; }
+      font-weight: bold;
+      text-transform: uppercase; }
+      .buy-it-now--block-buy:hover, .buy-it-now--block-buy:focus {
+        background: #f5f5f5; }
+      .buy-it-now--block-buy:active {
+        background: #e6e6e6; }
 
 .contacts {
   padding: 50px;
@@ -239,7 +262,16 @@ body {
     margin-left: 120px; }
     .contacts--form-text {
       border-radius: 5px;
+      width: calc(100% - 14px);
+      padding: 7px;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      border: 1px solid #000; }
+    .contacts--form-color {
+      border-radius: 5px;
       width: 100%;
+      height: 40px;
       padding: 7px;
       font-size: 16px;
       line-height: 24px;
@@ -247,7 +279,7 @@ body {
       border: 1px solid #000; }
     .contacts--form-message {
       border-radius: 5px;
-      width: 100%;
+      width: calc(100% - 14px);
       padding: 7px;
       font-size: 16px;
       line-height: 24px;
@@ -264,9 +296,19 @@ body {
       cursor: pointer;
       font-size: 18px;
       line-height: 18px;
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: uppercase; }
+      .contacts--form-send:hover, .contacts--form-send:focus {
+        background: #f5f5f5; }
+      .contacts--form-send:active {
+        background: #e6e6e6; }
   .contacts--info {
     width: 30%; }
+  .contacts--link {
+    color: #fff;
+    text-decoration: none; }
+    .contacts--link:hover, .contacts--link:focus, .contacts--link:active {
+      text-decoration: underline; }
   .contacts--skype:before {
     width: 26px;
     height: 26px;

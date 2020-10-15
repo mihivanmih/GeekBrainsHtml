@@ -9,6 +9,11 @@
     <title>GeekBrains HTML+CSS</title>
 </head>
 <body>
+
+<video  autoplay="true" loop="true" muted="muted">
+    <source src="img/fon.mp4" type="video/mp4">
+</video>
+
 <header class="header">
 
     <div class="header--text">
@@ -24,7 +29,7 @@
 
     </div>
 
-    <img src="img/top.jpg" alt="Product name" height="280">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-_RUYlh3lHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </header>
 
@@ -183,7 +188,9 @@
 
         <div class="reviews--block">
 
-            <div class="reviews--img"></div>
+            <div class="reviews--img">
+                <img src="img/reviews.gif" class="reviews--img-left" alt="">
+            </div>
 
             <div class="reviews--text">
                 <p class="reviews--text-description">
@@ -200,7 +207,9 @@
 
         <div class="reviews--block">
 
-            <div class="reviews--img"></div>
+            <div class="reviews--img">
+                <img src="img/reviews.gif" class="reviews--img-right" alt="">
+            </div>
 
             <div class="reviews--text">
                 <p class="reviews--text-description">
@@ -217,7 +226,9 @@
 
         <div class="reviews--block">
 
-            <div class="reviews--img"></div>
+            <div class="reviews--img">
+                <img src="img/reviews.gif" class="reviews--img-left" alt="">
+            </div>
 
             <div class="reviews--text">
                 <p class="reviews--text-description">
@@ -234,7 +245,9 @@
 
         <div class="reviews--block">
 
-            <div class="reviews--img"></div>
+            <div class="reviews--img">
+                <img src="img/reviews.gif" class="reviews--img-right" alt="">
+            </div>
 
             <div class="reviews--text">
                 <p class="reviews--text-description">
@@ -251,26 +264,26 @@
 
     </section>
 
-    <section class="buyitnow">
-        <h2 class="buyitnow--heading">Buy it now</h2>
+    <section class="buy-it-now">
+        <h2 class="buy-it-now--heading">Buy it now</h2>
 
-        <div class="buyitnow--block">
-            <div class="buyitnow--block-heading">Standart</div>
-            <div class="buyitnow--block-price">$100</div>
-            <ul class="buyitnow--block-list">
+        <div class="buy-it-now--block">
+            <div class="buy-it-now--block-heading">Standart</div>
+            <div class="buy-it-now--block-price">$100</div>
+            <ul class="buy-it-now--block-list">
                 <li>Porro officia cumque sint deleniti;</li>
                 <li>Тemo facere rem vitae odit;</li>
                 <li>Cum odio, iste quia doloribus autem;</li>
                 <li>Aperiam nulla ea neque.</li>
             </ul>
-            <button class="buyitnow--block-buy">BUY</button>
+            <button class="buy-it-now--block-buy">Buy</button>
 
         </div>
 
-        <div class="buyitnow--block">
-            <div class="buyitnow--block-heading">Premium</div>
-            <div class="buyitnow--block-price">$150</div>
-            <ul class="buyitnow--block-list">
+        <div class="buy-it-now--block">
+            <div class="buy-it-now--block-heading">Premium</div>
+            <div class="buy-it-now--block-price">$150</div>
+            <ul class="buy-it-now--block-list">
                 <li>Porro officia cumque sint deleniti;</li>
                 <li>Тemo facere rem vitae odit;</li>
                 <li>Cum odio, iste quia doloribus autem;</li>
@@ -280,14 +293,14 @@
                 <li>Cum odio, iste quia doloribus autem;</li>
                 <li>Aperiam nulla ea neque.</li>
             </ul>
-            <button class="buyitnow--block-buy">BUY</button>
+            <button class="buy-it-now--block-buy">Buy</button>
 
         </div>
 
-        <div class="buyitnow--block">
-            <div class="buyitnow--block-heading">Lux</div>
-            <div class="buyitnow--block-price">$200</div>
-            <ul class="buyitnow--block-list">
+        <div class="buy-it-now--block">
+            <div class="buy-it-now--block-heading">Lux</div>
+            <div class="buy-it-now--block-price">$200</div>
+            <ul class="buy-it-now--block-list">
                 <li>Porro officia cumque sint deleniti;</li>
                 <li>Тemo facere rem vitae odit;</li>
                 <li>Cum odio, iste quia doloribus autem;</li>
@@ -301,7 +314,7 @@
                 <li>Cum odio, iste quia doloribus autem;</li>
                 <li>Aperiam nulla ea neque.</li>
             </ul>
-            <button class="buyitnow--block-buy">BUY</button>
+            <button class="buy-it-now--block-buy">Buy</button>
 
         </div>
 
@@ -315,17 +328,19 @@
             <form action="">
                 <input type="text" class="contacts--form-text" placeholder="Your name:">
                 <input type="email" class="contacts--form-text" placeholder="Your email:">
+                <input type="tel"  placeholder="Your phone:" pattern="8 [0-9]{3}-[0-9]{3}" class="contacts--form-text">
+                <input type="color" class="contacts--form-color" value="#e66465">
                 <textarea name="" id="" cols="30" rows="6" class="contacts--form-message"
                           placeholder="Your message:"></textarea>
-                <button class="contacts--form-send">SEND</button>
+                <button class="contacts--form-send">send</button>
             </form>
         </div>
 
         <div class="contacts--info">
-            <div class="contacts--skype">here_your_login_skype</div>
+            <div class="contacts--skype"><a class="contacts--link" href="skype:+1234567890?call">here_your_login_skype</a></div>
             <div class="contacts--icq">279679659</div>
-            <div class="contacts--mail">psdhtmlcss@mail.ru</div>
-            <div class="contacts--phone">80 00 4568 55 55</div>
+            <div class="contacts--mail"><a class="contacts--link" href="mailto:psdhtmlcss@mail.ru">psdhtmlcss@mail.ru</a></div>
+            <div class="contacts--phone"><a class="contacts--link" href="tel: 80 00 4568 55 55">80 00 4568 55 55</a></div>
 
             <div class="contacts--social">
                 <a href="#">
