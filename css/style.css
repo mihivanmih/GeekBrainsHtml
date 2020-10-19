@@ -270,13 +270,16 @@ video {
       border: 1px solid #000; }
     .contacts--form-color {
       border-radius: 5px;
-      width: 100%;
+      width: calc(100% - 14px);
       height: 40px;
       padding: 7px;
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 20px;
       border: 1px solid #000; }
+@-moz-document url-prefix() {
+  .contacts--form-color {
+    width: 100%; } }
     .contacts--form-message {
       border-radius: 5px;
       width: calc(100% - 14px);
